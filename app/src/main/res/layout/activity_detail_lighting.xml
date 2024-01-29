@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tool_bar_detail_lighting"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/size_10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btn_drawer"
+                android:layout_width="@dimen/size_32"
+                android:layout_height="@dimen/size_0"
+                android:padding="@dimen/size_10"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_back_black" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btn_add"
+                android:padding="@dimen/size_10"
+                android:layout_width="@dimen/size_38"
+                android:layout_marginEnd="@dimen/size_20"
+                android:layout_height="@dimen/size_0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_setting"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tool_bar_detail_lighting"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/header_layout"
+                android:layout_marginTop="@dimen/size_25"
+                android:layout_marginHorizontal="@dimen/size_16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_name_lighting"
+                        style="@style/TextTitleSemiBoldBlueDark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="Bóng đèn cclght"
+                        android:ellipsize="end"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/text_size_16"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_name_room"
+                        style="@style/TextTitleSemiBoldBlueDark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size_4"
+                        android:text="Phòng khách"
+                        android:ellipsize="end"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/text_size_12"
+                        android:layout_below="@id/tv_name_lighting" />
+
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ic_turn_on_off"
+                    android:layout_marginStart="@dimen/size_16"
+                    android:src="@drawable/bg_button_power_smart_device"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/gradientView"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="@dimen/size_24"
+                app:srcCompat="@drawable/smart_light_3d"
+                android:layout_marginHorizontal="@dimen/size_16"
+                app:layout_constraintEnd_toEndOf="@+id/header_layout"
+                app:layout_constraintStart_toStartOf="@+id/header_layout"
+                app:layout_constraintTop_toBottomOf="@id/header_layout" />
+
+            <include
+                android:id="@+id/layout_timer_tool"
+                layout="@layout/layout_timer_bar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_24"
+                android:layout_marginBottom="@dimen/size_24"
+                app:layout_constraintVertical_bias="0"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/header_layout"
+                app:layout_constraintStart_toStartOf="@+id/header_layout"
+                app:layout_constraintTop_toBottomOf="@+id/gradientView" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

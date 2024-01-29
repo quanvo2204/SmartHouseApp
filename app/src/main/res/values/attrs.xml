@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomNumberPicker">
+        <attr name="custom_show_seconds" format="boolean"/>
+        <attr name="custom_show_minute" format="boolean"/>
+    </declare-styleable>
+</resources>

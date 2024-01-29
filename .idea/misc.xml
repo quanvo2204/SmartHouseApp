@@ -1,0 +1,72 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/drawable-v24/bg_button_power_smart_device.xml" value="0.1145" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/drawable-v24/bg_corner_20_gray.xml" value="0.111" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/drawable-v24/ic_add_white.xml" value="0.2125" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/drawable-v24/ic_back_black.xml" value="0.2125" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/drawable-v24/ic_humidity.xml" value="0.1145" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/drawable-v24/ic_power_button_off.xml" value="0.1145" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/drawable-v24/ic_power_button_on.xml" value="0.1145" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/drawable-v24/ic_temperature.xml" value="0.1145" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/back_to_home_button.xml" value="0.1215" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/bg_button_corner_30_blue.xml" value="0.1135" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/bg_button_corner_30_blue_light.xml" value="0.1215" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/bg_button_corner_30_border_blue.xml" value="0.2125" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/bg_edt_corner_grey.xml" value="0.2125" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/bg_info_login.xml" value="0.1135" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/button_background.xml" value="0.1135" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/card_background.xml" value="0.1135" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/custom_bg_main_menu.xml" value="0.1345" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/custom_edit_text.xml" value="0.1135" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_back.xml" value="0.1135" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_customer_service_support_svgrepo_com.xml" value="0.1345" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_drawer_icon.xml" value="0.1345" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_drawer_menu_home.xml" value="0.1345" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_hide_pass.xml" value="0.111" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_home_dashboard_basic_svgrepo_com.xml" value="0.1345" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1135" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_navi_user_avatar.xml" value="0.1345" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_setting_preferences_basic_svgrepo_com.xml" value="0.1345" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_setting_two_svgrepo_com.xml" value="0.1345" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_user_edit_svgrepo_com.xml" value="0.1345" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_user_person_profile_block_account_circle_svgrepo_com.xml" value="0.12" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_visible_pass.xml" value="0.111" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/icon_eye_password.xml" value="0.111" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/profile_back_button.xml" value="0.1215" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/profile_bk.xml" value="0.1215" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/shape_bg_white_radius_13dp.xml" value="0.2125" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/layout-v23/activity_login.xml" value="0.25" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_add_device.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_config_account.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_forget_pass.xml" value="0.25" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_login.xml" value="0.2" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_register.xml" value="0.14736842105263157" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_send_otp.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_splash.xml" value="0.20427350427350427" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_validate_otp.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/layout/content_profile.xml" value="0.25" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/layout/dialog_camera_password.xml" value="0.25" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/layout/dialog_device_password.xml" value="0.25" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/layout/dialog_loading_view.xml" value="0.25" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/layout/forget_pass_activity.xml" value="0.25" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_user_info.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/layout/item_device_type.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/layout/item_dht11.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/layout/item_lamp.xml" value="0.176" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/layout/item_toast_default.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/layout/item_user_info.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/layout/nav_header_main.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/MyApplication/app/src/main/res/layout/register_activity.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

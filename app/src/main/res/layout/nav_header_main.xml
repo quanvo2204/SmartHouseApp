@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.navigation.NavigationView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/size_130"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_header_main"
+    android:background="@drawable/custom_bg_main_menu">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btn_detail_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_50"
+            app:layout_constraintBottom_toTopOf="@+id/guideline2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_email"
+                android:layout_width="@dimen/size_50"
+                android:layout_height="@dimen/size_50"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_user_person_profile_block_account_circle_svgrepo_com"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="0dp"
+                android:text="Thông tin"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_12"
+                style="@style/TextBoldBlueDark"
+                android:textColor="@color/dark_blue"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_13"
+                android:layout_marginHorizontal="@dimen/size_8"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_email" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:overScrollMode="never"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="@dimen/size_130"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_10"
+                android:orientation="vertical"
+                android:weightSum="4"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/btn_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_100"
+                    android:layout_marginTop="@dimen/size_10">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/image_home"
+                        android:layout_width="@dimen/size_50"
+                        android:layout_height="@dimen/size_50"
+                        android:layout_marginTop="@dimen/size_10"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_home_assistant_svgrepo_com" />
+
+                    <TextView
+                        android:id="@+id/tv_device_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size_12"
+                        style="@style/TextBoldBlueDark"
+                        android:text="@string/drawer_menu_label_home"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="@dimen/text_size_13"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/image_home" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_100"
+                    android:layout_marginTop="@dimen/size_10">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_setting"
+                        android:layout_width="@dimen/size_50"
+                        android:layout_height="@dimen/size_50"
+                        android:layout_marginTop="@dimen/size_10"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_setting_2_svgrepo_com" />
+
+                    <TextView
+                        android:id="@+id/tv_setting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size_12"
+                        style="@style/TextBoldBlueDark"
+                        android:text="@string/drawer_menu_label_settings"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="@dimen/text_size_13"
+                        app:layout_constraintEnd_toEndOf="@+id/iv_setting"
+                        app:layout_constraintStart_toStartOf="@+id/iv_setting"
+                        app:layout_constraintTop_toBottomOf="@+id/iv_setting" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <FrameLayout
+                    android:id="@+id/frame_logout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_70"
+                    android:layout_marginTop="@dimen/size_10"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <TextView
+                        android:id="@+id/tv_logout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        style="@style/TextBoldBlueDark"
+                        android:text="@string/drawer_menu_label_logout"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="@dimen/text_size_13"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/guideline6" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+</com.google.android.material.navigation.NavigationView>

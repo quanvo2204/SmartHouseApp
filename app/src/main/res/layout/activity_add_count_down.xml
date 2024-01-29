@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_background">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tool_bar_detail_lighting"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/size_10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btn_drawer"
+                android:layout_width="@dimen/size_32"
+                android:layout_height="@dimen/size_0"
+                android:padding="@dimen/size_10"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_back_black" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textSize="@dimen/text_size_16"
+                android:textColor="@color/grey_dark_text"
+                app:textAllCaps="true"
+                style="@style/TextTitleSemiBoldBlueDark"
+                android:text="@string/activity_add_count_down_title"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/btn_add"
+                android:layout_width="wrap_content"
+                android:layout_marginEnd="@dimen/size_20"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_15"
+                android:textColor="@color/colorTextPrimary"
+                android:text="@string/activity_add_count_down_done"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tool_bar_detail_lighting">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_time"
+                style="@style/TextHeaderNormalBlueDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_10"
+                android:text="@string/activity_add_timer_tv_time"
+                android:textAllCaps="true"
+                android:textColor="@color/grey_light_text"
+                app:layout_constraintStart_toStartOf="@+id/cv_time_picker"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_time_picker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                app:cardCornerRadius="@dimen/size_16"
+                app:cardElevation="@dimen/size_6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_time">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                   <bk.ltuddd.iotapp.utils.view.CustomNumberPicker
+                       android:id="@+id/number_picker"
+                       android:layout_width="wrap_content"
+                       android:layout_height="match_parent"
+                       app:custom_show_seconds="true"
+                       app:layout_constraintTop_toTopOf="parent"
+                       app:layout_constraintBottom_toBottomOf="parent"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintEnd_toEndOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_action"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_add_timer_tv_action"
+                style="@style/TextHeaderNormalBlueDark"
+                android:textAllCaps="true"
+                android:layout_marginTop="@dimen/size_10"
+                android:textColor="@color/grey_light_text"
+                app:layout_constraintStart_toStartOf="@+id/cv_time_picker"
+                app:layout_constraintTop_toBottomOf="@+id/cv_time_picker" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_action"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="@dimen/size_10"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="@dimen/size_16"
+                app:cardElevation="@dimen/size_6"
+                app:layout_constraintTop_toBottomOf="@id/tv_action"
+                app:layout_constraintEnd_toEndOf="@+id/cv_time_picker"
+                app:layout_constraintStart_toStartOf="@+id/cv_time_picker">
+
+                <RadioGroup
+                    android:id="@+id/rdg_action"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:checkedButton="@+id/radio_button_1"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/size_16"
+                    android:layout_marginBottom="@dimen/size_16"
+                    android:paddingStart="@dimen/size_15">
+
+                    <RadioButton
+                        android:id="@+id/rd_only_off"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/light_blue"
+                        android:padding="@dimen/size_4"
+                        android:paddingStart="@dimen/size_24"
+                        android:text="@string/count_down_off"
+                        android:textColor="@color/dark_blue"
+                        android:textStyle="normal" />
+
+                    <RadioButton
+                        android:id="@+id/rd_only_on"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size_6"
+                        android:buttonTint="@color/light_blue"
+                        android:checked="true"
+                        android:padding="@dimen/size_4"
+                        android:paddingStart="@dimen/size_24"
+                        android:text="@string/count_down_on"
+                        android:textColor="@color/dark_blue" />
+
+                </RadioGroup>
+
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/transparent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/cv_action"
+                app:layout_constraintStart_toStartOf="@+id/cv_action"
+                app:layout_constraintTop_toBottomOf="@+id/cv_action" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_delete"
+        style="@style/ButtonBlue"
+        android:backgroundTint="@color/red"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/size_14"
+        android:layout_marginTop="@dimen/size_20"
+        android:layout_marginBottom="14dp"
+        android:text="@string/activity_add_count_down_delete_schedule"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

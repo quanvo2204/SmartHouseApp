@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/double_small"
+    android:background="@color/white"
+    android:animateLayoutChanges="true"
+    android:clickable="true"
+    android:elevation="@dimen/double_normal"
+    android:foreground="?selectableItemBackgroundBorderless"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="@dimen/large"
+    app:cardElevation="@dimen/normal"
+    android:focusable="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/large">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_device"
+            android:layout_width="@dimen/size_90"
+            android:layout_height="89dp"
+            android:layout_marginTop="@dimen/normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_name_device"
+            style="@style/TextNormalBlueDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/large"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textAlignment="center"
+            android:paddingHorizontal="@dimen/normal"
+            android:text="type"
+            android:textColor="@color/grey_dark_text"
+            app:layout_constraintEnd_toEndOf="@+id/image_device"
+            app:layout_constraintStart_toStartOf="@+id/image_device"
+            app:layout_constraintTop_toBottomOf="@+id/image_device" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="hint_phone">Số điện thoại</string>
+    <string name="hint_password">Mật khẩu</string>
+    <string name="remember_me">Ghi nhớ</string>
+    <string name="login">Đăng nhập</string>
+    <string name="no_account">Bạn chưa có tài khoản?</string>
+    <string name="register_instead">Đăng ký</string>
+    <string name="text_btn_next">Tiếp theo</string>
+    <string name="error_edt_account_null">Vui lòng nhập số điện thoại</string>
+    <string name="error_send_otp_from_firebase">Đã có lỗi xảy ra</string>
+    <string name="activity_send_otp_confirm_sentOtp_label">Nhập mã xác minh đã được gửi đến\n thiết bị của bạn</string>
+    <string name="activity_send_otp_confirm_otp_send_label">Xác thực tài khoản</string>
+    <string name="activity_send_otp_request_otp"><u>Gửi lại mã OTP</u></string>
+    <string name="error_have_no_internet">Xin vui lòng kiểm tra kết nối mạng</string>
+    <string name="activity_add_member_Invalid_format_Phone_number">Sai định dạng số điện thoại</string>
+    <string name="activity_send_otp_expired_otp_code">Mã OTP đã hết hiệu lực</string>
+    <string name="activity_send_otp_failed_otp_code">Mã OTP không hợp lệ</string>
+    <string name="activity_config_account_hint_confirm_password">Xác nhận mật khẩu</string>
+    <string name="activity_config_account_text_btn_send">Gửi</string>
+    <string name="activity_config_account_alert_config_account_label">Mật khẩu phải có ít nhất 8 ký tự bao gồm cả chữ và số</string>
+    <string name="activity_config_account_account_config_label">Thiết Lập mật khẩu</string>
+    <string name="error_edt_password_null">Vui lòng nhập mật khẩu</string>
+    <string name="error_different_password">Mật khẩu không trùng khớp</string>
+    <string name="error_create_user">Đăng ký tài khoản thất bại</string>
+    <string name="success_create_user">Đăng ký tài khoản thành công</string>
+    <string name="error_empty_phone_password">Số điện thoại và mật khẩu không được để trống</string>
+    <string name="error_authentication">Tài khoản không tồn tại</string>
+    <string name="error_account_existed">Tài khoản đã tồn tại</string>
+    <string name="success_login">Đăng nhập thành công</string>
+    <string name="error_login">Mật khẩu không hợp lệ</string>
+    <string name="logout">Đăng xuất</string>
+    <string name="forgot_password">Quên mật khẩu</string>
+    <string name="forgot_password_guid">Nhập số điện thoại đã đăng ký, \nhệ thống sẽ gửi mã xác nhận cho bạn.</string>
+    <string name="drawer_menu_label_home">Trang chủ</string>
+    <string name="drawer_menu_label_settings">Cài đặt</string>
+    <string name="drawer_menu_label_logout">Đăng xuất</string>
+    <string name="add_device">Thêm thiết bị</string>
+    <string name="agree">Đồng ý</string>
+    <string name="btn_continue">Tiếp tục</string>
+    <string name="dialog_cancel">Hủy</string>
+    <string name="empty_password">Bạn chưa nhập mã kích hoạt</string>
+    <string name="invalid_password_length">Mã kích hoạt dài ít nhất 6 ký tự</string>
+    <string name="expire_success">Kích hoạt thiết bị thành công</string>
+    <string name="notification">Vui lòng nhập số serial của thiết bị</string>
+    <string name="serial_fail">Số serial không hợp lệ</string>
+    <string name="serial_empty">Số serial không được để trống</string>
+    <string name="serial_invalid">Số serial phải bao gồm 8 chữ số</string>
+    <string name="serial_not_exist">Số serial không tồn tại</string>
+    <string name="state_on">ON</string>
+    <string name="state_off">OFF</string>
+    <string name="add_device_success">Thêm thiết bị vào tài khoản thành công</string>
+    <string name="bottom_selected_bar_text_select_all">Chọn tất cả</string>
+    <string name="bottom_selected_bar_text_delete">Xoá</string>
+    <string name="bottom_selected_bar_text_cancel">Huỷ</string>
+    <string name="activity_temperature_sensor_battery">Pin thiết bị:</string>
+    <string name="activity_temperature_textview_temperature">Nhiệt độ</string>
+    <string name="activity_temperature_textview_humidity">Độ ẩm</string>
+    <string name="activity_temperature_textview_sensor_statistics">Thống kê cảm biến</string>
+    <string name="add_auto_celsius_unit">°C</string>
+    <string name="alarm">Hẹn giờ</string>
+    <string name="stop_watch">Đếm ngược</string>
+    <string name="count_down_off">Tắt</string>
+    <string name="count_down_on">Bật</string>
+    <string name="activity_add_timer_tv_time">Thời gian</string>
+    <string name="activity_add_timer_tv_action">Hành động</string>
+    <string name="activity_add_count_down_delete_schedule">Xóa đếm ngược</string>
+    <string name="activity_add_count_down_done">Xong</string>
+    <string name="activity_add_count_down_title">Thêm đếm ngược</string>
+    <string name="activity_add_timer_title">Thêm hẹn giờ</string>
+    <string name="two_digit_format">%02d</string>
+    <string name="fragment_setting_child_devices_title_toolbar">Cài đặt chung</string>
+    <string name="fragment_setting_child_devices_name">Tên thiết bị</string>
+    <string name="fragment_setting_child_devices_remove_device">Xóa thiết bị</string>
+
+
+
+
+
+</resources>

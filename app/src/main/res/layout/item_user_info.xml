@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/mobileImageView"
+        android:src="@drawable/ic_mobile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="@dimen/size_15"
+        android:layout_marginBottom="@dimen/size_15"
+        android:layout_marginStart="@dimen/size_5"
+        style="@style/profileDetailsImage" />
+
+    <TextView
+        android:id="@+id/edt_tittle"
+        android:text="Mobile"
+        android:layout_marginStart="@dimen/size_35"
+        app:layout_constraintStart_toEndOf="@id/mobileImageView"
+        app:layout_constraintTop_toTopOf="@id/mobileImageView"
+        style="@style/profileDetailsTextMain"/>
+
+    <EditText
+        android:id="@+id/edt_description"
+        android:text="+89-8129999999"
+        android:layout_marginStart="@dimen/size_30"
+        app:layout_constraintTop_toBottomOf="@id/edt_tittle"
+        app:layout_constraintStart_toEndOf="@id/mobileImageView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:backgroundTint="@color/transparent"
+        style="@style/profileDetailsMiniText" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edt_description"
+        android:background="@color/semi_gray"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

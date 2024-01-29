@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:background="@color/light_blue">
+
+    <RelativeLayout
+        android:id="@+id/layout_devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/size_8"
+        android:gravity="center_vertical"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/selected_all_devices_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginHorizontal="@dimen/size_16"
+            android:gravity="center_horizontal"
+            android:background="?android:selectableItemBackgroundBorderless">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_add_all_devices"
+                android:layout_width="@dimen/size_23"
+                android:layout_height="@dimen/size_23"
+                android:scaleType="fitXY"
+                android:layout_centerHorizontal="true"
+                app:srcCompat="@drawable/item_checkable_white_selector" />
+
+            <TextView
+                android:id="@+id/tv_select_all_devices"
+                style="@style/TextTitleSemiBoldBlueDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_add_all_devices"
+                android:layout_centerHorizontal="true"
+                android:text="@string/bottom_selected_bar_text_select_all"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_12" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_scene"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginVertical="@dimen/size_8">
+
+        <RelativeLayout
+            android:id="@+id/cancel_mode_scene_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginHorizontal="@dimen/size_16"
+            android:gravity="center_horizontal"
+            android:background="?android:selectableItemBackgroundBorderless">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_cancel"
+                android:layout_width="@dimen/size_23"
+                android:layout_height="@dimen/size_23"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/ic_cancel" />
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                style="@style/TextTitleSemiBoldBlueDark"
+                android:layout_below="@id/img_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bottom_selected_bar_text_cancel"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_12" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/delete_scene_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:layout_marginHorizontal="@dimen/size_16"
+            android:background="?android:selectableItemBackgroundBorderless">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_delete_scene"
+                android:layout_width="@dimen/size_23"
+                android:layout_height="@dimen/size_23"
+                android:scaleType="fitXY"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:visibility="visible"
+                app:srcCompat="@drawable/ic_delete" />
+
+            <TextView
+                android:id="@+id/tv_delete_scene"
+                style="@style/TextTitleSemiBoldBlueDark"
+                android:layout_below="@id/img_delete_scene"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bottom_selected_bar_text_delete"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_12"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginVertical="@dimen/size_8"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/selected_all_notification_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginHorizontal="@dimen/size_16"
+            android:gravity="center_horizontal"
+            android:background="?android:selectableItemBackgroundBorderless">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_add_all_notification"
+                android:layout_width="@dimen/size_23"
+                android:layout_height="@dimen/size_23"
+                android:scaleType="fitXY"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:visibility="visible"
+                app:srcCompat="@drawable/item_checkable_white_selector" />
+
+            <TextView
+                android:id="@+id/tv_select_all_notification"
+                style="@style/TextTitleSemiBoldBlueDark"
+                android:layout_below="@id/img_add_all_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bottom_selected_bar_text_select_all"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_12" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

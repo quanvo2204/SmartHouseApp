@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "225863025630",
+    "firebase_url": "https://iot-app-ltuddd-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "iot-app-ltuddd",
+    "storage_bucket": "iot-app-ltuddd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:225863025630:android:7de77be1a7ede6a3cc534f",
+        "android_client_info": {
+          "package_name": "bk.ltuddd.iotapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "225863025630-66h5sodgmf6ep709ark2vj59n0knhahi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZMgWA8s9gZmoWi_F2-qBRU1jvf2du7cQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "225863025630-66h5sodgmf6ep709ark2vj59n0knhahi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

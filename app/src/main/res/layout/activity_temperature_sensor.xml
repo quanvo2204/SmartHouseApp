@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_background"
+    tools:context=".feature.sensor.ui.TemperatureSensorActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_temperature_sensor"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/size_10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btn_drawer"
+                android:layout_width="@dimen/size_32"
+                android:layout_height="@dimen/size_0"
+                android:padding="@dimen/size_10"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_back_black" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btn_add"
+                android:padding="@dimen/size_10"
+                android:layout_width="@dimen/size_38"
+                android:layout_marginEnd="@dimen/size_20"
+                android:layout_height="@dimen/size_0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_setting"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="@dimen/size_0"
+        android:layout_height="@dimen/size_0"
+        android:layout_marginTop="@dimen/size_5"
+        android:overScrollMode="never"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tb_temperature_sensor">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="@dimen/size_15"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_name_sensor"
+                android:textAllCaps="true"
+                style="@style/TextTitleSemiBoldBlueDark"
+                android:layout_width="@dimen/size_0"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_25"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="SENSOR"
+                android:textSize="@dimen/text_size_16"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/tv_room_name"
+                style="@style/TextTitleNormalGreyLight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_2"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="@dimen/text_size_14"
+                app:layout_constraintStart_toStartOf="@id/tv_name_sensor"
+                app:layout_constraintTop_toBottomOf="@id/tv_name_sensor" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cl_battery"
+                android:layout_width="@dimen/size_0"
+                android:layout_height="@dimen/size_184"
+                android:layout_marginTop="@dimen/size_12"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="@dimen/size_13"
+                app:cardElevation="@dimen/size_5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_room_name">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/iv_sensor"
+                        android:layout_width="@dimen/size_230"
+                        android:layout_height="@dimen/size_150"
+                        android:src="@drawable/temp_humid_sensor"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:layout_width="@dimen/size_0"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/size_11"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <TextView
+                            android:id="@+id/tv_battery_device"
+                            style="@style/TextHeaderNormalBlueDark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/size_15"
+                            android:text="@string/activity_temperature_sensor_battery"
+                            android:textSize="@dimen/text_size_14" />
+
+                        <ImageView
+                            android:id="@+id/iv_battery"
+                            android:layout_width="@dimen/size_25"
+                            android:layout_height="@dimen/size_22"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_battery_full"
+                            android:layout_marginStart="@dimen/size_12" />
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/tv_percent"-->
+<!--                            style="@style/TextTitleNormalGreyLight"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginStart="@dimen/size_8"-->
+<!--                            android:text="90%"-->
+<!--                            android:textColor="@color/normal_orange"-->
+<!--                            android:textSize="@dimen/text_size_14" />-->
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TableRow
+                android:id="@+id/tb_temp_and_humi"
+                android:layout_width="@dimen/size_0"
+                android:layout_height="@dimen/size_156"
+                android:layout_marginTop="@dimen/size_20"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl_battery">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/size_9"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_bg_gradient_popup_shadow"
+                    android:paddingBottom="@dimen/size_25">
+
+                    <TextView
+                        android:id="@+id/tv_temp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size_35"
+                        android:fontFamily="@font/opensans_regular"
+                        android:text="@string/add_auto_celsius_unit"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_33"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size_18"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_temp">
+
+                        <ImageView
+                            android:id="@+id/iv_temp"
+                            android:layout_width="@dimen/size_13"
+                            android:layout_height="@dimen/size_25"
+                            android:background="@drawable/ic_temperature"
+                            android:backgroundTint="@color/grey_light1" />
+
+                        <TextView
+                            style="@style/TextTitleNormalGreyLight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/size_15"
+                            android:text="@string/activity_temperature_textview_temperature"
+                            android:textColor="@color/grey_light1"
+                            android:textSize="@dimen/text_size_16" />
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/size_9"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_bg_gradient_popup_shadow"
+                    android:paddingBottom="@dimen/size_25">
+
+                    <TextView
+                        android:id="@+id/tv_percent_humidity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size_35"
+                        android:fontFamily="@font/opensans_regular"
+                        android:text="0%"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_33"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size_18"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_percent_humidity">
+
+                        <ImageView
+                            android:id="@+id/iv_humi"
+                            android:layout_width="@dimen/size_23"
+                            android:layout_height="@dimen/size_25"
+                            android:background="@drawable/ic_humidity"
+                            android:backgroundTint="@color/grey_light1" />
+
+                        <TextView
+                            style="@style/TextTitleNormalGreyLight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/size_15"
+                            android:text="@string/activity_temperature_textview_humidity"
+                            android:textColor="@color/grey_light1"
+                            android:textSize="@dimen/text_size_16" />
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </TableRow>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_sensor_statistics"
+                android:layout_width="@dimen/size_0"
+                android:layout_height="@dimen/size_80"
+                android:layout_marginTop="@dimen/size_18"
+                android:layout_marginBottom="@dimen/size_10"
+                app:cardCornerRadius="@dimen/size_13"
+                app:cardElevation="@dimen/size_5"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tb_temp_and_humi">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        style="@style/TextHeaderNormalBlueDark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/size_25"
+                        android:text="@string/activity_temperature_textview_sensor_statistics"
+                        android:textSize="@dimen/text_size_16"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:layout_width="@dimen/size_47"
+                        android:layout_height="@dimen/size_41"
+                        android:layout_marginEnd="@dimen/size_16"
+                        android:background="@drawable/bg_button_blue_gradient"
+                        android:gravity="center"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+                        <ImageView
+                            android:layout_width="@dimen/size_25"
+                            android:layout_height="@dimen/size_25"
+                            android:src="@drawable/ic_chart" />
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
